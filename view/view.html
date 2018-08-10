@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body
+{
+	background-color:#ffffff;
+}
+table
+{
+margin-left:25%;
+margin-top: 100px;	
+width: 50%;
+border-collapse:collapse;
+}
+
+table,th,td
+{
+border:2px solid #ddd;	
+}
+
+
+th
+{
+	height:50px;
+	background-color: #23dd6e;
+} 
+td
+{
+	text-align:center;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+</style>
+</head>
+<body>
+
+<table>
+<tr>
+<th>Name</th>
+<th>Number</th>
+</tr>	
+</tr>
+
+{% for item in data %}
+
+<tr><td>{{item.name}}</td>
+<td>{{item.number}}</td></tr>
+
+{% endfor %}
+
+</table>
+
+</body>
+</html>
